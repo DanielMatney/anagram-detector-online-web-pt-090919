@@ -6,8 +6,12 @@ class Anagram
     @word = word
   end
   
-  def match
-    
+  def match(list)
+    list.each do |anagram|
+      if anagram.sort == @word.sort
+        return anagram
+      end
+    end
   end
   
   
