@@ -7,12 +7,14 @@ class Anagram
   end
   
   def match(list)
+    anagrams = []
     list.each do |anagram|
       if anagram.split.sort == @word.split.sort
-        return anagram
-      else nil
+        anagrams << anagram
+      else 
       end
     end
+    anagrams
   end
   
   
